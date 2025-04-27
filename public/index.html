@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Collaborative Editor</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <!-- CodeMirror (for code editing) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.59.4/codemirror.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.59.4/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.59.4/mode/javascript/javascript.min.js"></script>
+
+  <!-- Interact.js (for drag-and-drop) -->
+  <script src="https://cdn.jsdelivr.net/npm/interactjs@1.10.11/dist/interact.min.js"></script>
+</head>
+<body>
+  <div class="toolbar">
+    <input type="text" id="username" placeholder="Enter your username" />
+    <button id="darkModeBtn">🌙 Toggle Dark Mode</button>
+    <button id="addStickyNote">Add Sticky Note</button>
+    <button id="saveBtn">💾 Save Document</button>
+    <button id="savePdfBtn">📄 Save as PDF</button>
+    <button id="clearBtn">🧹 Clear All</button>
+  </div>
+
+  <div class="editor-container">
+    <textarea id="editor" placeholder="Start writing here..."></textarea>
+    <textarea id="codeEditor"></textarea>
+  </div>
+
+  <div id="stickyNotesContainer"></div>
+  <div id="status">Status: Connected</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
