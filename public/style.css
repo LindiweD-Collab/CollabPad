@@ -221,7 +221,7 @@ body {
   }
   
   .toolbar-buttons input, .toolbar-buttons button {
-    flex: 1 1 120px; /* Allows input/button to grow and shrink, ensuring they're responsive */
+    flex: 1 1 120px; 
   }
   
   @media (max-width: 768px) {
